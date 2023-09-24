@@ -1,0 +1,26 @@
+{
+    "name": "administrator/zserv",
+    "description": "server com lib",
+    "autoload": {
+        "psr-4": {
+            "Serv\\": "src/",
+            "Serv\\IFace\\": "src/Interface/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zz",
+            "email": "cnexam119@yeah.net",
+            "homepage": "https://www.119exam.cn",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "LGPL-2.1",
+        "GPL-3.0+"
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.8",
+        "ext-redis": "*"
+    }
+}
