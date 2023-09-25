@@ -1,5 +1,5 @@
 {
-    "name": "administrator/zserv",
+    "name": "cnexam119/serv",
     "description": "server com lib",
     "autoload": {
         "psr-4": {
