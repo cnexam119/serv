@@ -9,7 +9,7 @@ class ErrorClass implements IError
 
     public function success(array $data): array
     {
-        return ['Code'=>static::SUCCESS, 'Msg'=>"操作成功"];
+        return ['Code'=>static::SUCCESS, 'Msg'=>"操作成功",'Data'=>$data];
     }
 
     public function fail(string $msg="操作失败"):array
