@@ -33,7 +33,7 @@ class Comm
         ];
     }
 
-    public function hashMapDecode(array $redisHashMap):array{
+    public static function hashMapDecode(array $redisHashMap):array{
         $result = [];
         foreach ($redisHashMap as $r){
             $result[] = json_decode($r);
@@ -41,7 +41,7 @@ class Comm
         return $result;
     }
 
-    public function hashMapEncode(array $rs):array{
+    public static function hashMapEncode(array $rs):array{
         $result = [];
         foreach ($rs as $r){
             $result[$r->id] = json_encode($r,JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_UNICODE);
