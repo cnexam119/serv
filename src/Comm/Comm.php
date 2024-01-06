@@ -9,6 +9,8 @@ class Comm
     const ACT_DELETE = 3;
     const ACT_SORT = 4; //改变顺序
 
+    const ACT_ACTIVE = 5; //改变顺序
+
     public static function children($arr,$pidArr,&$result):void{
         $tmp=[]; //存放每次找到的id,作为下一次的pid数组
         foreach($arr as $v){
