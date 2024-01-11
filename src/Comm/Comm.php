@@ -51,4 +51,30 @@ class Comm
         return $result;
     }
 
+    public static function strEnc($string=""):string{
+        $chars = '';
+        $len = strlen($string = iconv('utf-8', 'gbk', $string));
+        for ($i = 0; $i < $len; $i++) {
+            $chars .= str_pad(base_convert(ord($string[$i]), 10, 36), 2, 0, 0);
+        }
+        return strtoupper($chars);
+    }
+
+    public static function strDec($string=''):string{
+        $chars = '';
+        foreach (str_split($string, 2) as $char) {
+            $chars .= chr(intval(base_convert($char, 36, 10)));
+        }
+        return @iconv('gbk', 'utf-8', $chars);
+    }
+
+
+    public static function getParent(&$arr,$id){ //$ps 为PID数组
+        foreach($arr as $a){
+            if($a['id'] == $id){
+                return $a['pid'];
+            }
+        }
+    }
+
 }

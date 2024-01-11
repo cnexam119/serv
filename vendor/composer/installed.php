@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0ffc01b77e8fc6ecfc51665b6a1f894e41aecc7a',
+        'reference' => '444a229b662fe3fefa96e3d2a46f78bb067de430',
         'name' => 'cnexam119/serv',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0ffc01b77e8fc6ecfc51665b6a1f894e41aecc7a',
+            'reference' => '444a229b662fe3fefa96e3d2a46f78bb067de430',
             'dev_requirement' => false,
         ),
         'firebase/php-jwt' => array(
