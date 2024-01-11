@@ -69,10 +69,10 @@ class Comm
     }
 
 
-    public static function getParent(&$arr,$id){ //$ps 为PID数组
+    public static function getParent($arr,$id){ //$ps 为PID数组
         foreach($arr as $a){
-            if($a['id'] == $id){
-                return $a['pid'];
+            if($a->id == $id){
+                return $a->pid;
             }
         }
     }
